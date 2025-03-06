@@ -10,10 +10,7 @@ To access the code, go to battleship > app > src > main > java
 
 General notes:
 1. Don't change any method headers. These will be correct. 
-2. For testing, double check that your terminal ends in something like this:![alt text](image.png). If it does not, run the following command(which stands for change directory). 
-```
-cd battleship
-```
+2. For testing run the given command in the terminal. It will be of the pattern gradle ______
 3. Say hello to your (maybe) first real code editor. Autocomplete, error highlighting, and other things are about to make your life so much easier. 
 4. Apply for the student github developer pack!!
 
@@ -33,7 +30,7 @@ In this part we will write the code for ship.java. This class will represent a s
 
 To test this portion of the project, run the following command: 
 ```
-gradle runShipTest
+gradle -p ./battleship runShipTest
 ```
 
 ### Part 2 - Location.java
@@ -53,7 +50,7 @@ The status of this would be whether this position is unguessed, we got a hit, or
 
 To test this portion of the project, run the following command: 
 ```
-gradle runLocationTest
+gradle -p ./battleship runLocationTest
 ```
 
 ### Part 3 - Grid.java
@@ -69,7 +66,7 @@ The main state to track in the Grid is a 2-dimensional array of Location objects
 5. Complete the allShipsSank method. This should visit all locations in the grid and check if all locations that have a ship also are hit. If all ships are sank return true, otherwise false. 
 
 ```
-gradle runGridTest
+gradle -p ./battleship runGridTest
 ```
 
 ### Part 4 - Player.java
@@ -87,13 +84,13 @@ Then each Player also will have 2 Grids. One grid represents that player’s gri
 5. Complete the getters at the bottom of the file. 
 
 ```
-gradle runPlayerTest
+gradle -p ./battleship runPlayerTest
 ```
 
 # Submission
 1. Testing everything. Run the command - 
 ``` 
-gradle test
+gradle -p ./battleship test
 ```
 
 2. Submit on github classroom by running the following commands. This also saves your work permanently (unless you actively want to delete it). 
