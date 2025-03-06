@@ -86,3 +86,12 @@ task runPlayerTest(type: Test) {
         includeTestsMatching "bcc.battleship.PlayerTest"
     }
 }
+
+task runFreebieTest(type: Test) {
+    description = "Runs tests in the Freebie class."
+    group = "verification"
+    // Run only tests from ShipTest class
+    filter {
+        includeTestsMatching "bcc.battleship.Freebie"
+    }
+}
