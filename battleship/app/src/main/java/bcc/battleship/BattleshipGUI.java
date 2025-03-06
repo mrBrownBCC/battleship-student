@@ -13,7 +13,7 @@ public class BattleshipGUI extends JFrame {
     private HomePanel homePanel;
     private ShipPlacementPanel shipPlacementPanel;
     private PassAndPlayPanel passAndPlayPanel;
-    private GamePanel gamePanel;
+    private GamePanel gamePanel; 
     
     // Two players for the game.
     private Player player1;
